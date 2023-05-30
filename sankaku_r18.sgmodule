@@ -3,7 +3,7 @@
 
 
 [Script]
-sankaku r18 = type=http-response,pattern=^https:\/\/capi-v2\.sankakucomplex\.com\/posts\/keyset.*$|^https:\/\/capi-v2\.sankakucomplex\.com\/tag-and-wiki\/name\/.*$|^https:\/\/capi-v2\.sankakucomplex\.com\/tags/autosuggestCreating\?tag\=.*\&target\=post$,requires-body=1,max-size=-1,script-path=sankaku2.js
+sankaku r18 = type=http-response,pattern=^https:\/\/capi-v2\.sankakucomplex\.com\/posts\/keyset.*$|^https:\/\/capi-v2\.sankakucomplex\.com\/tag-and-wiki\/name\/.*$|^https:\/\/capi-v2\.sankakucomplex\.com\/tags/autosuggestCreating\?tag\=.*\&target\=post$,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/zxhzxhz/surge_scripts/main/scripts/sankakucomplex/sankaku.js
 
 [MITM]
 hostname= %APPEND% capi-v2.sankakucomplex.com:443
