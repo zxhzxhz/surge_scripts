@@ -1,0 +1,9 @@
+#!name=Sankaku R18
+#!desc=bypass r18 limit in sankaku ios app. tested on version 4.5.
+
+
+[Script]
+sankaku r18 = type=http-response,pattern=^https:\/\/capi-v2\.sankakucomplex\.com\/posts\/keyset.*$|^https:\/\/capi-v2\.sankakucomplex\.com\/tag-and-wiki\/name\/.*$|^https:\/\/capi-v2\.sankakucomplex\.com\/tags/autosuggestCreating\?tag\=.*\&target\=post$,requires-body=1,max-size=-1,script-path=sankaku2.js
+
+[MITM]
+hostname= %APPEND% capi-v2.sankakucomplex.com:443
